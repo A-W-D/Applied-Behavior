@@ -133,3 +133,18 @@ setInterval(updateCountdown, 1000);
 
 // تشغيل العداد لأول مرة
 updateCountdown();
+
+// Scroll Effect
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.custom-nav');
+  if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+  } else {
+      navbar.classList.remove('scrolled');
+  }
+});
+
+// Remove preload class after page load
+window.addEventListener('load', function() {
+  document.body.classList.remove('preload');
+});
