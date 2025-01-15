@@ -82,6 +82,17 @@
   scrollbar-color: #25D366 #f1f1f1;
 }
 
+p {
+    font-family: 'Cairo', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 600;
+    color: #2D3436;
+    margin-bottom: 1.5rem;
+    text-align: right;
+    max-width: 800px;
+    letter-spacing: 0.3px;
+}
 
 /********** Template CSS **********/
 
