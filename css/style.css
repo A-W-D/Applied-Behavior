@@ -34,7 +34,7 @@
 }
 
 .page-header {
-  background-image: url('../img/1\ \(2\).jpg'); /* استبدل بـ مسار الصورة الخاصة بك */
+  background-image: url("../img/1\ \(2\).jpg"); /* استبدل بـ مسار الصورة الخاصة بك */
   background-size: cover;
   background-position: center;
   position: relative;
@@ -58,30 +58,100 @@
 
 /* تخصيص شكل Scrollbar لمتصفح Chrome و Safari و Edge */
 ::-webkit-scrollbar {
-  width: 16px;  /* عرض الـ scrollbar */
+  width: 16px; /* عرض الـ scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;  /* لون خلفية المسار */
+  background: #f1f1f1; /* لون خلفية المسار */
   border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #25D366;  /* لون الـ thumb */
+  background: #25d366; /* لون الـ thumb */
   border-radius: 10px;
   border: 3px solid #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #128C7E;  /* لون الـ thumb عند التحويم */
+  background: #128c7e; /* لون الـ thumb عند التحويم */
 }
 
 /* تخصيص شكل Scrollbar لمتصفح Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #25D366 #f1f1f1;
+  scrollbar-color: #25d366 #f1f1f1;
 }
 
+/* Custom Navigation Styles */
+.custom-nav {
+  padding: 12px 0;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Brand/Logo Section */
+.brand-section h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #058534, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+/* Diploma Title Styles */
+.diploma-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 10px 0;
+  position: relative;
+}
+
+.english-title {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+/* Join Button Styles */
+.join-button {
+  padding: 12px 28px;
+  background: linear-gradient(45deg, #56ec71, #3e423d);
+  border: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.join-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(103, 247, 156, 0.3);
+}
+
+.join-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(45deg, #08c77d, #262626);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #000000;
+}
+
+
+.join-button i {
+  position: relative;
+}
+
+
+/* الستايل الأساسي للفقرات */
 p {
     font-family: 'Cairo', sans-serif;
     font-size: 18px;
@@ -97,9 +167,9 @@ p {
 /********** Template CSS **********/
 
 :root {
-  --primary: #000000;
-  --light: #fff5f3;
-  --dark: #103741;
+  --primary: #ffffff;
+  --light: #e43e1d;
+  --dark: #86e7ff;
 }
 
 .back-to-top {
@@ -131,7 +201,7 @@ p {
 }
 
 .btn.btn-primary {
-  color: #ffffff;
+  color: #ffffffeb;
 }
 
 .btn-square {
