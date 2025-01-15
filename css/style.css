@@ -1,6 +1,6 @@
 .btn-primary {
-  background-color: #25d366;
-  border-color: #25d366;
+  background-color: #dc2b9e;
+  border-color: #ba3b90;
   transition: all 0.3s ease;
 }
 
@@ -16,25 +16,25 @@
 }
 
 .form-control:focus {
-  border-color: #25d366;
+  border-color: #d3255f;
   box-shadow: 0 0 0 0.2rem rgba(37, 211, 102, 0.25);
 }
 
 .btn-primary {
-  background-color: #25d366;
-  border-color: #25d366;
+  background-color: #04a346;
+  border-color: #000000;
   transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #128c7e;
-  border-color: #128c7e;
+  background-color: #3bf965;
+  border-color: #d3d3d3;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
 }
 
 .page-header {
-  background-image: url('path-to-your-image.jpg'); /* استبدل بـ مسار الصورة الخاصة بك */
+  background-image: url('../img/1\ \(2\).jpg'); /* استبدل بـ مسار الصورة الخاصة بك */
   background-size: cover;
   background-position: center;
   position: relative;
@@ -56,10 +56,37 @@
   z-index: 2; /* لجعل النص فوق الخلفية */
 }
 
+/* تخصيص شكل Scrollbar لمتصفح Chrome و Safari و Edge */
+::-webkit-scrollbar {
+  width: 16px;  /* عرض الـ scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;  /* لون خلفية المسار */
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #25D366;  /* لون الـ thumb */
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #128C7E;  /* لون الـ thumb عند التحويم */
+}
+
+/* تخصيص شكل Scrollbar لمتصفح Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #25D366 #f1f1f1;
+}
+
+
 /********** Template CSS **********/
 
 :root {
-  --primary: #fe5d37;
+  --primary: #000000;
   --light: #fff5f3;
   --dark: #103741;
 }
